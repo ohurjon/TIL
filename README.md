@@ -17,6 +17,6 @@
 -   Repo
     -   Content
     -   Different Default Folder & Repo (.git Folder Exist)
-    -   git init Command Use Creat Repo
+    -   git init Command Use Create Repo
 
 ## 2023-03-29
