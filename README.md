@@ -20,3 +20,8 @@
     -   git init Command Use Create Repo
 
 ## 2023-03-29
+
+-   Commit Making
+    -   `git commit -m`
+-   Staging Area
+    -   `git add` Use the command to add the file to the staging area you want to insert
