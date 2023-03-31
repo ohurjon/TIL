@@ -25,3 +25,9 @@
     -   `git commit -m`
 -   Staging Area
     -   `git add` Use the command to add the file to the staging area you want to insert
+
+
+## 2023-03-31
+
+- python String methods
+- python String formatting
