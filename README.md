@@ -26,8 +26,12 @@
 -   Staging Area
     -   `git add` Use the command to add the file to the staging area you want to insert
 
-
 ## 2023-03-31
 
-- python String methods
-- python String formatting
+-   python String methods
+-   python String formatting
+
+## 2023-04-12
+
+-   Turtlebot3
+    [Setting](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/)
