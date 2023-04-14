@@ -35,3 +35,30 @@
 
 -   Turtlebot3
     [Setting](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/)
+
+## 2023-04-14
+### BasicComputerPrograming
+-   python tuple (4-5)
+```python
+tuple = (), tuple(), tuple(list) ...
+One Object tuple (a,)  <- not forget ","
+```
+-   python dictionary
+```python
+dictionary = { key : value, ... }
+```
+-   python comprehension
+```python
+expr for target1 in seq1... if condtition
+```
+- python fuction
+  * built-in function
+  ```python
+  name(arg1,arg2, ...) // return value
+  ```
+  * user-defined function
+    ```python
+    def name(arg1,arg2, ...) :
+        body
+        return value
+    ```
