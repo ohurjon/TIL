@@ -62,3 +62,10 @@ expr for target1 in seq1... if condtition
         body
         return value
     ```
+    
+## 2023-04-15
+### BasicStatistics
+- Population
+- Sample
+- Variance
+- Standard deviation
