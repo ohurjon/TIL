@@ -1,6 +1,6 @@
 # TIL
 
--   당일 학습한 내용을 정리합니다
+-   Organize what you learned on the day
 
 ## 2023-03-27
 
