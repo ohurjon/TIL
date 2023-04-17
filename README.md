@@ -69,3 +69,8 @@ expr for target1 in seq1... if condtition
 - Sample
 - Variance
 - Standard deviation
+
+## 2023-04-17
+### BasicComputerPrograming
+
+- Exam Solve
