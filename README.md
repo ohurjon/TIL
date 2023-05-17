@@ -74,3 +74,8 @@ expr for target1 in seq1... if condtition
 ### BasicComputerPrograming
 
 - Exam Solve
+
+## 2023-05-12
+
+
+- Object, Class, Instance, __INIT__
