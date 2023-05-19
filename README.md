@@ -78,4 +78,12 @@ expr for target1 in seq1... if condtition
 ## 2023-05-12
 
 
-- Object, Class, Instance, __INIT__
+- Object, Class, Instance, \_\_INIT\_\_
+
+## 2023-05-19
+
+- Class Inheritance
+- Super Class \_\_INIT\_\_
+- Private Variable `__(variable)`
+- Overriding
+- Multi Class Inheritance

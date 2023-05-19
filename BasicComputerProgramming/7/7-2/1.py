@@ -25,6 +25,15 @@ class Account:
             print("Error")
 
 
+class IdentifiedAccount(Account):
+    def __init__(self, *, id):
+        super().__init__()
+        self.id = id
+
+    def get_id(self):
+        return self.id
+
+
 user = Account(10000)
 user.withdraw(100215123)
 

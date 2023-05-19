@@ -1,31 +1,38 @@
 class Account:
     MAX_AMOUNT_PER_TRANSACTION = 10000
-    balance = 0
-    name = ""
 
-    def __init__(self, money):
-        self.balance = money
+    def __init__(self, money=0):
+        self.__balance = money
 
     def __str__(self):
-        return f'current balance : {self.balance}'
+        return f'current balance : {self.__balance}'
 
     def get_balance(self):
-        return self.balance
+        return self.__balance
 
     def deposit(self, money):
         if money < Account.MAX_AMOUNT_PER_TRANSACTION:
-            self.balance += money
+            self.__balance += money
         else:
             print("Error")
 
     def withdraw(self, money):
         if money < Account.MAX_AMOUNT_PER_TRANSACTION:
-            self.balance -= money
+            self.__balance -= money
         else:
             print("Error")
 
 
+class IdentifiedAccount(Account):
+    def __init__(self, *, id):
+        super().__init__()
+        self.__id = id
+
+    def get_id(self):
+        return self.__id
+
+
 user = Account(10000)
-user.withdraw(100215123)
+user.withdraw(100)
 
 print(str(user))

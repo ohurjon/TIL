@@ -3,7 +3,8 @@ class Account:
     balance = 0
     name = ""
 
-    def __init__(self, money):
+    def __init__(self, name, money):
+        self.name = name
         self.balance = money
 
     def __str__(self):
@@ -25,7 +26,15 @@ class Account:
             print("Error")
 
 
-user = Account(10000)
+class IdentifiedAccount(Account):
+    def __init__(self, *, id):
+        self.id = id
+
+    def get_id(self):
+        return self.id
+
+
+user = Account("ohurjon", 10000)
 user.withdraw(100215123)
 
 print(str(user))
