@@ -79,3 +79,7 @@ expr for target1 in seq1... if condtition
 
 
 - Object, Class, Instance, __INIT__
+
+## 2023-05-26
+
+- module, package, try ~except, raise
