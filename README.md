@@ -77,7 +77,6 @@ expr for target1 in seq1... if condtition
 
 ## 2023-05-12
 
-
 - Object, Class, Instance, \_\_INIT\_\_
 
 ## 2023-05-19
@@ -87,3 +86,7 @@ expr for target1 in seq1... if condtition
 - Private Variable `__(variable)`
 - Overriding
 - Multi Class Inheritance
+
+## 2023-05-26
+
+- module, package, try ~except, raise
