@@ -90,3 +90,42 @@ expr for target1 in seq1... if condtition
 ## 2023-05-26
 
 - module, package, try ~except, raise
+
+## 2023-06-02
+
+- ```open, read, write, close``` function
+- ```writelines, writeline, readlines, readline``` function
+- binary file
+  ```python 
+  open(file,"wb") # Open for Write
+  open(file,"rb") # Open for Read
+  file.write(bytes)
+  file.read(size)
+  ```
+- struct module
+
+     ```python
+    import struct
+    
+    struct.pack(format, *values)
+    struct.unpack(format, bytedata)
+  
+    struct.calcsize(format)
+    ```
+- struct format table
+
+| 문자 | 바이트 순서       | 크기와 정렬  |
+|--|--------------|---------|
+| @/= | 시스템에 따름      | 시스템에 따름 |
+| = | 시스템에 따름      | 표준      |
+| < | 리틀 엔디안       | 표준      |
+| \> | 빅 엔디안        | 표준      |
+|! | 네트워크 (빅 엔디안) | 표준      |
+- `<` big-endian, `>` little-endian
+- str -> byte ``str.encode()``
+- byte -> str ``byte_str.decode()``
+- file pointer
+     ```python
+    file.seek(offset,n)
+    file.tell() # Pointer Position
+    ```
