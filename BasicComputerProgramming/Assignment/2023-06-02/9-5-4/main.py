@@ -11,23 +11,17 @@ file.seek(0, 0)
 
 while True:
     if file.tell() < size:
-        byte_name = file.read(50)
 
-        data_name = struct.unpack('>50s', byte_name)
-        name = data_name[0].decode().replace('\00', "")
+        string_n = struct.unpack('>1i', file.read(4))[0]
+        data_name = struct.unpack(f'>{string_n}s', file.read(string_n))
+        name = data_name[0].decode()
 
-        byte_n = file.read(4)
-        n = struct.unpack('>1i', byte_n)[0]
+        n = struct.unpack('>1i', file.read(4))[0]
 
-        byte_scores = file.read(4 * n)
-        data_scores = struct.unpack('>' + str(n) + 'i', byte_scores)
-        scores = data_scores
-
-        print(scores)
-
+        data_scores = struct.unpack(f'>{str(n)}i', file.read(4 * n))
         lecture.add_lecture(name)
 
-        for score in scores:
+        for score in data_scores:
             lecture.add_lecture_score(name, score)
     else:
         break
@@ -36,3 +30,4 @@ file.close()
 
 for lec in lecture.get_lecture():
     print(lec, lecture.get_lecture_scores(lec))
+
